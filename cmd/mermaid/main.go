@@ -14,11 +14,7 @@ import (
 func main() {
 	registry := new(require.Registry)
 	data, err := ioutil.ReadFile("../../lib/mermaid.min.js")
-	//fmt.Println(data)
 	strData := string(data)
-	//	strData += `
-	//mermaid.initialize({startOnLoad:true})
-	//`
 	vm := goja.New()
 	this := registry.Enable(vm)
 	console.Enable(vm)
@@ -27,7 +23,6 @@ func main() {
 		panic(this)
 	}
 	v, err := vm.RunString(strData)
-	//v, err := vm.RunScript("main", strData)
 	if err != nil {
 		panic(err)
 	}
