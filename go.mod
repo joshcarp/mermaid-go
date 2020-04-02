@@ -3,6 +3,7 @@ module github.com/joshcarp/sysl-mermaid
 go 1.14
 
 require (
+	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/chromedp/cdproto v0.0.0-20200209033844-7e00b02ea7d2 // indirect
 	github.com/chromedp/chromedp v0.5.3 // indirect
 	github.com/dlclark/regexp2 v1.2.0 // indirect
